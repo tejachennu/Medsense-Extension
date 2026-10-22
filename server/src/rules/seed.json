@@ -1,0 +1,42 @@
+[
+  {
+    "key": "generic-preauth",
+    "name": "Generic pre-authorisation documents",
+    "state": "*",
+    "stage": "preauth",
+    "packageCode": "*",
+    "notes": "Example rules. Replace with the current NHA HBP mandatory-document list for each package before relying on results.",
+    "items": [
+      { "id": "clinical-notes", "title": "Clinical notes detailing history and admission findings", "description": "Notes showing presenting complaints, history, vitals and examination findings that justify admission." },
+      { "id": "investigations", "title": "Investigations done", "description": "Reports of investigations supporting the diagnosis (lab, imaging), with patient name and date." },
+      { "id": "line-of-management", "title": "Planned line of management", "description": "Treating doctor's plan, including medication or procedure orders." },
+      { "id": "patient-photo", "title": "Patient photograph at admission", "description": "Photograph of the patient in the hospital bed." }
+    ]
+  },
+  {
+    "key": "generic-claim",
+    "name": "Generic claim submission documents",
+    "state": "*",
+    "stage": "claim",
+    "packageCode": "*",
+    "notes": "Example rules. Replace with the current NHA HBP mandatory-document list for each package before relying on results.",
+    "items": [
+      { "id": "discharge-summary", "title": "Discharge summary", "description": "Signed discharge summary with admission and discharge dates, diagnosis and treatment given." },
+      { "id": "final-bill", "title": "Final bill / invoice", "description": "Itemised hospital bill matching the package claimed." },
+      { "id": "treatment-records", "title": "Treatment records", "description": "Daily progress notes, medication charts or operative notes covering the stay." },
+      { "id": "discharge-photo", "title": "Patient photograph at discharge", "description": "Photograph of the patient at discharge." }
+    ]
+  },
+  {
+    "key": "hp-photo-rules",
+    "name": "Himachal Pradesh photo rules",
+    "state": "Himachal Pradesh",
+    "stage": "*",
+    "packageCode": "*",
+    "notes": "Example state rule set. Confirm wording against the SHA circular.",
+    "items": [
+      { "id": "hp-dated-admission-photo", "title": "Patient photograph taken on the admission day itself (Himachal Pradesh rule)", "description": "Photo must carry a printed date or timestamp matching the admission date." },
+      { "id": "hp-photo-per-enhancement", "title": "A separate patient photograph for each enhancement claimed (Himachal Pradesh rule)", "description": "One photograph cannot evidence two enhancements; each needs its own dated photo." }
+    ]
+  }
+]
